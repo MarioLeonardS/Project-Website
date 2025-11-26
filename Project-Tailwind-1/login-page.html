@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="font-sans">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign In - Tailwind</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="public/output.css" />
+  </head>
+  <body class="h-full bg-gray-900">
+    <!-- Pages -->
+    <div
+      class="flex min-h-screen flex-col justify-center items-center py-10 px-6"
+    >
+      <div class="">
+        <img
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+          alt="Your Company"
+          class="mx-auto h-10 w-auto"
+        />
+        <h2 class="text-white text-center font-bold text-2xl m-5">
+          Sign In to Your Account
+        </h2>
+      </div>
+      <!-- Input -->
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm max-sm:w-full">
+        <form action="#" method="POST" class="space-y-6">
+          <div class="email-form">
+            <!-- Email -->
+            <label for="username" class="text-white block font-medium"
+              >Email/Username</label
+            >
+            <div class="mt-2">
+              <input
+                type="email"
+                name="emain"
+                id="email"
+                required
+                autocomplete="email"
+                placeholder="Username"
+                class="block w-full bg-white/5 rounded-md py-2 px-2 outline outline-1 outline-gray-600 text-white placeholder:text-white-500 text-sm focus:outline-2 focus:outline-blue-600 mb-5"
+              />
+            </div>
+            <div class="password-form">
+              <!-- Password -->
+              <div
+                class="flex justify-between items-center font-medium text-blue-400 hover:text-blue-600"
+              >
+                <label for="password" class="text-white block font-medium"
+                  >Password</label
+                >
+                <div class="text-sm">
+                  <a href="#">Forgot Password?</a>
+                </div>
+              </div>
+              <div class="mt-2">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  autocomplete="current-password"
+                  placeholder="Password"
+                  class="block w-full bg-white/5 rounded-md py-2 px-2 outline outline-1 outline-gray-600 text-white placeholder:text-white-500 text-sm focus:outline-2 focus:outline-blue-600 mb-5"
+                />
+                <div class="flex items-center">
+                  <input
+                    type="checkbox"
+                    name="showPassword"
+                    id="showPassword"
+                    class="appearance-none w-4 h-4 border-gray-500 border rounded-sm checked:bg-blue-500 hover:checked:bg-blue-600 mr-2"
+                  />
+                  <label
+                    for="checkbox"
+                    class="select-none text-white font-medium"
+                    id="label-checkbox"
+                    >Show Password</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Button -->
+          <div class="btn">
+            <button
+              class="font-semibold text-white w-full bg-blue-500 py-2 rounded-md text-center mb-4 hover:bg-blue-600"
+            >
+              Sign In
+            </button>
+          </div>
+          <div class="text-white font-medium text-center">
+            <p>
+              Not a member?
+              <a href="#" class="text-blue-400 hover:text-blue-600"
+                >Start a 14 day free trial</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Pages -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <script src="src/login-page.js" async defer></script>
+  </body>
+</html>
