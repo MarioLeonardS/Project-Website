@@ -37,7 +37,7 @@
             >
             <a
               class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
-              href="#"
+              href="#order"
               ><li>Order</li></a
             >
             <a
@@ -64,11 +64,13 @@
           and high-quality ingredients. The shop delivers an authentic taste of
           Europe in every bite.
         </p>
-        <button
-          class="mt-6 p-3 border-2 bg-white text-black border-gray-200 rounded-md px-6 transition-all hover:bg-gray-200"
+        <a href="#product"
+          ><button
+            class="mt-6 p-3 border-2 bg-white text-black border-gray-200 rounded-md px-6 transition-all hover:bg-gray-200"
+          >
+            See Product
+          </button></a
         >
-          See Product
-        </button>
       </div>
     </section>
     <!-- Product Section -->
@@ -83,7 +85,7 @@
           <!-- Slide 1 -->
           <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/baguette.webp"
@@ -102,7 +104,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/bagels.webp"
@@ -121,7 +123,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/Bolen-Pisang-Cokelat-.webp"
@@ -140,7 +142,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/boule.webp"
@@ -163,7 +165,7 @@
           <!-- Slide 2 -->
           <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/Bread-Rolls-1-500x500.webp"
@@ -182,7 +184,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/brioche.webp"
@@ -201,7 +203,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/crackers.webp"
@@ -220,7 +222,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/crepes.webp"
@@ -243,7 +245,7 @@
           <!-- Slide 3 -->
           <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/Galette-de-Rois.webp"
@@ -262,7 +264,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/Homemade-English-Muffins-4.webp"
@@ -281,7 +283,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/obwarzanek-krakowski-nosek.webp"
@@ -300,7 +302,7 @@
               >
             </div>
             <div
-              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
               <img
                 src="assets/img/pretzel.webp"
@@ -378,9 +380,12 @@
       </div>
     </section>
     <!-- Customer Rating -->
-    <section class="min-w-full p-16 overflow-hidden" id="rating">
+    <section
+      class="min-w-full h-screen flex flex-col justify-between p-16 pt-28 overflow-hidden"
+      id="rating"
+    >
       <div>
-        <h1 class="text-5xl text-center mb-12">Our Customer Review</h1>
+        <h1 class="text-5xl text-center mb-8 font-bold">Our Customer Review</h1>
       </div>
       <!-- Wrapper -->
       <div
@@ -390,7 +395,7 @@
         <!-- Real Slide -->
         <!-- Review 1 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -412,7 +417,7 @@
         </div>
         <!-- Review 2 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -435,7 +440,7 @@
         </div>
         <!-- Review 3 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -458,7 +463,7 @@
         </div>
         <!-- Revieww 4 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -481,7 +486,7 @@
         </div>
         <!-- Review 5 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -504,7 +509,7 @@
         </div>
         <!-- Review 6 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -527,7 +532,7 @@
         </div>
         <!-- Review 7 -->
         <div
-          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200 transition-transform hover:scale-105"
         >
           <div class="flex items-center">
             <img
@@ -549,9 +554,18 @@
           </p>
         </div>
       </div>
+      <div class="w-fit text-center self-center mt-8">
+        <h1 class="text-4xl">TOTAL</h1>
+        <h1 class="text-8xl font-medium text-amber-900">
+          <span id="value" data-value="500">0</span>+
+        </h1>
+        <p>Order On 2025</p>
+      </div>
     </section>
-
-    <script src="src/carousel_product.js" async defer></script>
+    <!-- Order Section -->
+    <section class="h-screen px-16 bg-yellow-100" id="order"></section>
+    <script src="src/carousel_product.js" defer></script>
     <script src="src/customer_review.js" defer></script>
+    <script src="src/number_counter.js"></script>
   </body>
 </html>
