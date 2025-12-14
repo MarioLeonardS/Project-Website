@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chrysos Bread's - Pusat Roti Amphoreus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Font -->
+
+    <link rel="stylesheet" href="public/output.css" />
+  </head>
+  <body class="bg-white font-outfit h-full">
+    <!-- Navbar -->
+    <div id="navbar" class="w-full">
+      <nav
+        class="flex items-center justify-between w-full bg-white px-10 py-5 shadow-md z-10 fixed opacity-0 transition-all delay-700 hover:opacity-100 hover:delay-0"
+      >
+        <div id="logo" class="font-bold text-2xl">
+          <h2>CB's</h2>
+        </div>
+        <div id="u-list">
+          <ul class="flex">
+            <a
+              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              href="#hero-section"
+              ><li>Home</li></a
+            >
+            <a
+              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              href="#product"
+              ><li>Product</li></a
+            >
+            <a
+              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              href="#rating"
+              ><li>Rating</li></a
+            >
+            <a
+              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              href="#"
+              ><li>Order</li></a
+            >
+            <a
+              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              href="#"
+              ><li>About Us</li></a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero-section" class="w-full h-full bg-black overflow-hidden">
+      <div
+        class="bg-[url('/assets/img/Bread-Hero.webp')] opacity-70 bg-cover bg-center min-h-screen"
+      ></div>
+      <div
+        class="text-white text-center self-center drop-shadow-md text-pretty absolute top-56 max-w-full max-h-full"
+      >
+        <h1 class="font-bold text-7xl">Chrysos Bakery's</h1>
+        <p class="pt-4 text-lg mx-40 text-wrap">
+          A European-style bakery that specializes in traditional breads and
+          pastries. It offers handcrafted products made with classic techniques
+          and high-quality ingredients. The shop delivers an authentic taste of
+          Europe in every bite.
+        </p>
+        <button
+          class="mt-6 p-3 border-2 bg-white text-black border-gray-200 rounded-md px-6 transition-all hover:bg-gray-200"
+        >
+          See Product
+        </button>
+      </div>
+    </section>
+    <!-- Product Section -->
+    <section class="w-full h-screen pt-32" id="product">
+      <div class="text-center mb-6">
+        <h1 class="text-5xl font-semibold tracking-wide">Our Product</h1>
+      </div>
+      <!-- Container Carousel -->
+      <div class="relative overflow-hidden">
+        <!-- Wrapper -->
+        <div id="carousel-track" class="flex transition-transform duration-500">
+          <!-- Slide 1 -->
+          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/baguette.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Baguette"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Baguette</h1>
+                <h1 class="font-semibold pt-2">$1</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/bagels.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="bagels"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Bagels</h1>
+                <h1 class="font-semibold pt-2">$0.7</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/Bolen-Pisang-Cokelat-.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Bolen"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Bolen</h1>
+                <h1 class="font-semibold pt-2">$5</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/boule.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Boule"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Boule</h1>
+                <h1 class="font-semibold pt-2">$10</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/Bread-Rolls-1-500x500.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Bread Rolls"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Bread Rolls</h1>
+                <h1 class="font-semibold pt-2">$4</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/brioche.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Brioche"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Brioche</h1>
+                <h1 class="font-semibold pt-2">$2</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/crackers.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Crackers"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Crackers</h1>
+                <h1 class="font-semibold pt-2">$1.5</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/crepes.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Crepes"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Crepes</h1>
+                <h1 class="font-semibold pt-2">$2.3</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/Galette-de-Rois.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Galette de Rois"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Galette de Rois</h1>
+                <h1 class="font-semibold pt-2">$7.2</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/Homemade-English-Muffins-4.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="English Muffin"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">English Muffin</h1>
+                <h1 class="font-semibold pt-2">4.5</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/obwarzanek-krakowski-nosek.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Obwarzanek Krakowski"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Obwarzanek Krakowski</h1>
+                <h1 class="font-semibold pt-2">$13.1</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+            <div
+              class="bg-white rounded shadow p-4 hover:scale-105 transition-all"
+            >
+              <img
+                src="assets/img/pretzel.webp"
+                class="max-h-screen rounded-md aspect-square"
+                alt="Pretzel"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
+              <div class="flex justify-between">
+                <h1 class="font-semibold pt-2">Pretzel</h1>
+                <h1 class="font-semibold pt-2">$6</h1>
+              </div>
+              <a href="#" class="mt-2 transition-colors hover:text-amber-800"
+                >View More &#8594;</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol -->
+        <button
+          id="prevBtn"
+          class="absolute left-0 top-1/2 -translate-y-1/2 bg-amber-800 hover:bg-amber-900 transition-colors text-white px-4 py-4 text-2xl"
+        >
+          <
+        </button>
+
+        <button
+          id="nextBtn"
+          class="absolute right-0 top-1/2 -translate-y-1/2 bg-amber-800 hover:bg-amber-900 transition-colors text-white px-4 py-4 text-2xl"
+        >
+          >
+        </button>
+      </div>
+    </section>
+    <!-- Recommendation Product -->
+    <section
+      class="bg-yellow-100 h-screen flex items-center"
+      id="recommendation"
+    >
+      <div class="px-16 flex">
+        <div class="w-full">
+          <img
+            src="assets/img/classic_crepes_1.webp"
+            alt="Crepes"
+            loading="lazy"
+            class="rounded-xl"
+          />
+        </div>
+        <div class="ml-8 flex flex-col justify-center">
+          <h1 class="bg-yellow-200 p-2 mb-1 max-w-fit">#1 Most Popular Food</h1>
+          <h1 class="text-5xl mb-4">Italian Fruits Crepes</h1>
+          <p class="text-justify max-w-full mb-4">
+            Fruit crepes in Italian cuisine are known for their delicate, thin
+            layers made from a light batter and cooked to a soft, golden
+            texture. These crepes are typically filled with fresh seasonal
+            fruits such as strawberries, peaches, or berries, creating a balance
+            between natural sweetness and the subtle flavor of the crepe itself.
+            The combination results in a refreshing dessert that feels both
+            simple and refined.
+          </p>
+          <p class="text-justify max-w-full">
+            Overall, Italian fruit crepes showcase the country’s culinary style:
+            minimal ingredients, careful technique, and a focus on natural
+            taste.
+          </p>
+          <a
+            class="p-3 px-5 mt-10 rounded-md text-white max-w-fit transition-all bg-amber-800 hover:bg-amber-900"
+            href="#product"
+          >
+            See Product
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Customer Rating -->
+    <section class="min-w-full p-16 overflow-hidden" id="rating">
+      <div>
+        <h1 class="text-5xl text-center mb-12">Our Customer Review</h1>
+      </div>
+      <!-- Wrapper -->
+      <div
+        class="flex gap-11 relative will-change-transform transform-gpu"
+        id="slide"
+      >
+        <!-- Real Slide -->
+        <!-- Review 1 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/firefly.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Firefly</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Review 2 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/castorice.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Castorice</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Review 3 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/cyrene.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Cyrene</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Revieww 4 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/phainon.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Phainon</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Review 5 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/hyacine.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Hyacine</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Review 6 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/anaxa.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Anaxa</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+        <!-- Review 7 -->
+        <div
+          class="min-w-96 min-h-fit gap-4 p-4 rounded shadow-xl border border-gray-200"
+        >
+          <div class="flex items-center">
+            <img
+              src="assets/img/Profile/herta.webp"
+              alt="Customer"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+
+            <div class="ml-3">
+              <p class="font-semibold text-gray-800">Herta</p>
+
+              <!-- Rating -->
+              <div class="flex text-yellow-400 text-sm">★ ★ ★ ★ ★</div>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 text-sm leading-relaxed">
+            Pelayanannya sangat cepat dan produknya sesuai deskripsi. Saya
+            sangat puas dan pasti akan order lagi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/carousel_product.js" async defer></script>
+    <script src="src/customer_review.js" defer></script>
+  </body>
+</html>
