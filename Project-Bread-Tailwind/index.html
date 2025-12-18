@@ -563,9 +563,61 @@
       </div>
     </section>
     <!-- Order Section -->
-    <section class="h-screen px-16 bg-yellow-100" id="order"></section>
+    <section class="min-h-full p-16 pt-28 bg-yellow-100" id="order">
+      <div class="flex flex-col items-center" id="container-form">
+        <h1 class="text-center text-5xl font-bold mb-8">Order</h1>
+        <form
+          id="orderForm"
+          action="order-product"
+          method="POST"
+          class="flex flex-col p-4 bg-amber-800 rounded-md shadow-md"
+        >
+          <!-- Email Address -->
+          <label for="email" class="text-white"> Email :</label>
+          <input
+            type="email"
+            class="min-w-96 mt-2 mb-2 p-1 px-2 rounded-md"
+            placeholder="Input Valid Email Address"
+          />
+          <div class="mt-2" id="product-input">
+            <!-- Product Selection -->
+            <label for="product-select" class="text-white"
+              >Select Product</label
+            >
+            <select
+              name="product-select"
+              class="p-1 mx-2 px-2 rounded-md"
+              id="selection"
+            >
+              <option value="">None</option>
+              <option value="Bagels">Bagels</option>
+              <option value="baguette">Baguatte</option>
+              <option value="Bread-Rolls">Bread Rolls</option>
+              <option value="Brioche">Brioche</option>
+              <option value="Crackers">Crackers</option>
+              <option value="crepes">Crepes</option>
+              <option value="Galette-de-Rois">Galette de Rois</option>
+              <option value="English Muffin">English Muffin</option>
+              <option value="Obwarzanek">Obwarzanek Krakowski</option>
+              <option value="Pretzel">Pretzel</option>
+            </select>
+
+            <label for="quantity" class="text-white">Product Quantity :</label>
+            <input
+              type="number"
+              placeholder="Quantity"
+              name="quantity"
+              id="number-quantity"
+              class="p-1 ml-2 px-2 rounded-md"
+            />
+          </div>
+        </form>
+        <button class="p-1 mt-2" id="add-Product">+ Add New Product</button>
+      </div>
+    </section>
     <script src="src/carousel_product.js" defer></script>
     <script src="src/customer_review.js" defer></script>
     <script src="src/number_counter.js"></script>
+    <script src="src/add_items.js"></script>
   </body>
 </html>
