@@ -42,7 +42,7 @@
             >
             <a
               class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
-              href="#"
+              href="#about"
               ><li>About Us</li></a
             >
           </ul>
@@ -570,13 +570,13 @@
           id="orderForm"
           action="order-product"
           method="POST"
-          class="flex flex-col p-4 bg-amber-800 rounded-md shadow-md"
+          class="flex flex-col p-4 mb-2 bg-amber-800 rounded-md shadow-md"
         >
           <!-- Email Address -->
           <label for="email" class="text-white"> Email :</label>
           <input
             type="email"
-            class="min-w-96 mt-2 mb-2 p-1 px-2 rounded-md"
+            class="min-w-96 mt-2 mb-4 p-1 px-2 rounded-md"
             placeholder="Input Valid Email Address"
           />
           <div class="mt-2" id="product-input">
@@ -612,7 +612,32 @@
             />
           </div>
         </form>
-        <button class="p-1 mt-2" id="add-Product">+ Add New Product</button>
+        <button
+          class="p-2 my-2 text-lg hover:bg-amber-200 hover:shadow rounded-md transition-colors"
+          id="add-Product"
+        >
+          + Add New Product
+        </button>
+        <button
+          class="p-2 px-6 my-2 text-lg text-white bg-amber-800 hover:bg-amber-900 rounded-md transition-colors shadow"
+          id="submit-order"
+        >
+          Order
+        </button>
+        <p class="text-sm mb-24">
+          *Order and payment information will be sent via the email you entered.
+        </p>
+      </div>
+    </section>
+    <!-- About Us -->
+    <section id="about" class="min-h-full p-16 pt-28">
+      <div>
+        <div>
+          <h1 class="text-center text-5xl font-bold mb-8">About Us</h1>
+        </div>
+        <div>
+          <h1>We Have Been Making Cakes Since 2018</h1>
+        </div>
       </div>
     </section>
     <script src="src/carousel_product.js" defer></script>
