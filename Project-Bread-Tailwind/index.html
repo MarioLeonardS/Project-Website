@@ -13,35 +13,44 @@
     <!-- Navbar -->
     <div id="navbar" class="w-full">
       <nav
-        class="flex items-center justify-between w-full bg-white px-10 py-5 shadow-md z-10 fixed opacity-0 transition-all delay-700 hover:opacity-100 hover:delay-0"
+        class="flex sm:items-center justify-between flex-col sm:flex-row w-full bg-white px-10 py-5 shadow-md z-10 fixed transition-all delay-700 hover:opacity-100 hover:delay-0 sm:opacity-0"
       >
-        <div id="logo" class="font-bold text-2xl">
+        <div id="logo" class="flex items-center font-bold text-2xl gap-4">
+          <img
+            src="assets/img/Logo/menu (2).png"
+            alt="Menu"
+            class="h-6 sm:hidden cursor-pointer"
+            id="menu-btn"
+          />
           <h2>CB's</h2>
         </div>
         <div id="u-list">
-          <ul class="flex">
+          <ul
+            class="hidden items-center flex-col sm:flex-row sm:flex text-center"
+            id="nav-link"
+          >
             <a
-              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              class="p-2 mx-1 border-b-4 border-transparent w-fit hover:border-amber-800 transition-all"
               href="#hero-section"
               ><li>Home</li></a
             >
             <a
-              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              class="p-2 mx-1 border-b-4 border-transparent w-fit hover:border-amber-800 transition-all"
               href="#product"
               ><li>Product</li></a
             >
             <a
-              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              class="p-2 mx-1 border-b-4 border-transparent w-fit hover:border-amber-800 transition-all"
               href="#rating"
               ><li>Rating</li></a
             >
             <a
-              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              class="p-2 mx-1 border-b-4 border-transparent w-fit hover:border-amber-800 transition-all"
               href="#order"
               ><li>Order</li></a
             >
             <a
-              class="p-2 mx-1 border-b-4 border-transparent hover:border-amber-800 transition-all"
+              class="p-2 mx-1 border-b-4 border-transparent w-fit hover:border-amber-800 transition-all"
               href="#about"
               ><li>About Us</li></a
             >
@@ -57,8 +66,8 @@
       <div
         class="text-white text-center self-center drop-shadow-md text-pretty absolute top-56 max-w-full max-h-full"
       >
-        <h1 class="font-bold text-7xl">Chrysos Bakery's</h1>
-        <p class="pt-4 text-lg mx-40 text-wrap">
+        <h1 class="font-bold text-4xl sm:text-7xl">Chrysos Bakery's</h1>
+        <p class="pt-4 text-xs sm:text-lg mx-10 sm:mx-40">
           A European-style bakery that specializes in traditional breads and
           pastries. It offers handcrafted products made with classic techniques
           and high-quality ingredients. The shop delivers an authentic taste of
@@ -74,7 +83,7 @@
       </div>
     </section>
     <!-- Product Section -->
-    <section class="w-full h-screen pt-32" id="product">
+    <section class="w-full h-fit sm:h-screen pt-32 pb-24" id="product">
       <div class="text-center mb-6">
         <h1 class="text-5xl font-semibold tracking-wide">Our Product</h1>
       </div>
@@ -83,7 +92,9 @@
         <!-- Wrapper -->
         <div id="carousel-track" class="flex transition-transform duration-500">
           <!-- Slide 1 -->
-          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+          <div
+            class="min-w-full grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 px-16"
+          >
             <div
               class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
@@ -163,7 +174,9 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+          <div
+            class="min-w-full grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 px-16"
+          >
             <div
               class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
@@ -243,7 +256,9 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="min-w-full grid grid-cols-4 gap-4 p-4 px-16">
+          <div
+            class="min-w-full grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 px-16"
+          >
             <div
               class="bg-white rounded shadow p-4 hover:scale-105 transition-all cursor-pointer"
             >
@@ -341,11 +356,11 @@
     </section>
     <!-- Recommendation Product -->
     <section
-      class="bg-yellow-100 h-screen flex items-center"
+      class="bg-yellow-100 h-fit sm:h-screen flex items-center"
       id="recommendation"
     >
-      <div class="px-16 flex">
-        <div class="w-full">
+      <div class="px-16 py-16 flex flex-col sm:flex-row">
+        <div class="w-full mb-4 sm:mb-0">
           <img
             src="assets/img/classic_crepes_1.webp"
             alt="Crepes"
@@ -353,9 +368,11 @@
             class="rounded-xl"
           />
         </div>
-        <div class="ml-8 flex flex-col justify-center">
-          <h1 class="bg-yellow-200 p-2 mb-1 max-w-fit">#1 Most Popular Food</h1>
-          <h1 class="text-5xl mb-4">Italian Fruits Crepes</h1>
+        <div class="sm:ml-8 flex flex-col justify-center">
+          <h1 class="bg-yellow-200 text-center p-2 mb-1 w-full sm:max-w-fit">
+            #1 Most Popular Food
+          </h1>
+          <h1 class="text-3xl sm:text-5xl mb-4">Italian Fruits Crepes</h1>
           <p class="text-justify max-w-full mb-4">
             Fruit crepes in Italian cuisine are known for their delicate, thin
             layers made from a light batter and cooked to a soft, golden
@@ -371,7 +388,7 @@
             taste.
           </p>
           <a
-            class="p-3 px-5 mt-10 rounded-md text-white max-w-fit transition-all bg-amber-800 hover:bg-amber-900"
+            class="p-3 px-5 mt-6 sm:mt-10 rounded-md text-white max-w-fit transition-all bg-amber-800 hover:bg-amber-900"
             href="#product"
           >
             See Product
@@ -381,11 +398,13 @@
     </section>
     <!-- Customer Rating -->
     <section
-      class="min-w-full h-screen flex flex-col justify-between p-16 pt-28 overflow-hidden"
+      class="min-w-full sm:h-screen flex flex-col justify-between p-16 pt-28 overflow-hidden"
       id="rating"
     >
       <div>
-        <h1 class="text-5xl text-center mb-8 font-bold">Our Customer Review</h1>
+        <h1 class="text-4xl sm:text-5xl text-center mb-8 font-bold">
+          Our Customer Review
+        </h1>
       </div>
       <!-- Wrapper -->
       <div
@@ -576,7 +595,7 @@
           <label for="email" class="text-white"> Email :</label>
           <input
             type="email"
-            class="min-w-96 mt-2 mb-4 p-1 px-2 rounded-md"
+            class="sm:min-w-96 mt-2 mb-4 p-1 px-2 rounded-md"
             placeholder="Input Valid Email Address"
           />
           <div class="mt-2" id="product-input">
@@ -586,7 +605,7 @@
             >
             <select
               name="product-select"
-              class="p-1 mx-2 px-2 rounded-md"
+              class="p-1 sm:mx-2 px-2 w-full sm:w-fit rounded-md"
               id="selection"
             >
               <option value="">None</option>
@@ -608,7 +627,7 @@
               placeholder="Quantity"
               name="quantity"
               id="number-quantity"
-              class="p-1 ml-2 px-2 rounded-md"
+              class="p-1 w-full sm:w-fit sm:ml-2 px-2 mb-2 rounded-md"
             />
           </div>
         </form>
@@ -624,7 +643,7 @@
         >
           Order
         </button>
-        <p class="text-sm mb-24">
+        <p class="text-xs sm:text-sm mb-24">
           *Order and payment information will be sent via the email you entered.
         </p>
       </div>
@@ -635,12 +654,12 @@
         <div>
           <h1 class="text-center text-5xl font-bold mb-8">About Us</h1>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
           <div class="flex flex-col justify-between">
-            <h2 class="text-2xl font-semibold">
+            <h2 class="text-2xl font-semibold text-center lg:text-left mb-4">
               We Have Been Making Cakes Since 2018
             </h2>
-            <p class="w-full text-justify">
+            <p class="w-full text-justify mb-4">
               Founded in 2015, our bakery was born from a passion for European
               and American baking traditions. What began as a small effort to
               bring authentic flavors and high-quality craftsmanship to our
@@ -660,11 +679,11 @@
               >Gallery</a
             >
           </div>
-          <div class="ml-8">
+          <div class="lg:ml-8 lg:mb-0 mb-4">
             <img
               src="assets/img/bakery-with-display-pastries-pastries (1) (1).jpg"
               alt="Bakery Shop"
-              class="rounded-md shadow-lg max-w-max"
+              class="rounded-md shadow-lg max-w-max justify-self-center"
               loading="lazy"
             />
           </div>
@@ -672,16 +691,18 @@
       </div>
     </section>
     <footer id="footer" class="p-16 pb-0 bg-amber-800">
-      <div class="mb-16 grid grid-cols-3 justify-items-center text-white">
+      <div
+        class="mb-16 grid sm:grid-cols-3 gap-8 justify-items-center text-white"
+      >
         <div id="footer-col-1">
           <h1 class="text-4xl font-bold mb-4">CB's</h1>
-          <p class="mb-4 text-justify font-light">
+          <p class="mb-4 text-justify font-light sm:text-left md:text-justify">
             We offer authentic European breads and pastries, crafted using
             traditional recipes and carefully selected ingredients. Freshly
             baked every day to preserve taste, texture, and quality.
           </p>
           <h3>Address :</h3>
-          <p class="text-justify font-light">
+          <p class="text-justify font-light sm:text-left md:text-justify">
             Jl.Chrysos No.1, Kec.Chrysos Utara, Kota Okhema Utara, Provinsi
             Okhema 32600, Amphoreus.
           </p>
@@ -725,39 +746,41 @@
             />BACK TO TOP</a
           >
         </div>
-        <div id="footer-col-2">
-          <h3 class="text-lg font-semibold mb-5">Site Map</h3>
-          <ul>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#">Home</a>
-            </li>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#product">Product</a>
-            </li>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#rating">Rating</a>
-            </li>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#order">Order</a>
-            </li>
-            <li class="hover:underline font-light hover:font-medium">
-              <a href="#about">About Us</a>
-            </li>
-          </ul>
-        </div>
-        <div id="footer-col-3">
-          <h3 class="text-lg font-semibold mb-5">Legal</h3>
-          <ul>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="mb-2 font-light hover:underline hover:font-medium">
-              <a href="#">Terms of Services</a>
-            </li>
-            <li class="font-light hover:underline hover:font-medium">
-              <a href="#">Customer Services</a>
-            </li>
-          </ul>
+        <div class="grid grid-cols-2 mt-8 sm:mt-0 w-full sm:w-fit gap-8">
+          <div id="footer-col-2">
+            <h3 class="text-lg font-semibold mb-5">Site Map</h3>
+            <ul>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#">Home</a>
+              </li>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#product">Product</a>
+              </li>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#rating">Rating</a>
+              </li>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#order">Order</a>
+              </li>
+              <li class="hover:underline font-light hover:font-medium">
+                <a href="#about">About Us</a>
+              </li>
+            </ul>
+          </div>
+          <div id="footer-col-3">
+            <h3 class="text-lg font-semibold mb-5">Legal</h3>
+            <ul>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="mb-2 font-light hover:underline hover:font-medium">
+                <a href="#">Terms of Services</a>
+              </li>
+              <li class="font-light hover:underline hover:font-medium">
+                <a href="#">Customer Services</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div id="copyright" class="border-t-2 py-2">
@@ -768,7 +791,8 @@
     </footer>
     <script src="src/carousel_product.js" defer></script>
     <script src="src/customer_review.js" defer></script>
-    <script src="src/number_counter.js"></script>
-    <script src="src/add_items.js"></script>
+    <script src="src/number_counter.js" defer></script>
+    <script src="src/add_items.js" defer></script>
+    <script src="src/menu_baar.js" defer></script>
   </body>
 </html>

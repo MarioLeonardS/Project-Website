@@ -6,10 +6,14 @@ button.addEventListener("click", function () {
   wrapper.className = "mt-2";
 
   wrapper.innerHTML = `
-      <label for="product-select" class="text-white">Select Product</label>
-      <select name="product-select"
-              class="p-1 mx-2 px-2 rounded-md"
-              id="selection">
+      <label for="product-select" class="text-white"
+              >Select Product</label
+            >
+            <select
+              name="product-select"
+              class="p-1 sm:mx-2 px-2 w-full sm:w-fit rounded-md"
+              id="selection"
+            >
               <option value="">None</option>
               <option value="Bagels">Bagels</option>
               <option value="baguette">Baguatte</option>
@@ -21,15 +25,15 @@ button.addEventListener("click", function () {
               <option value="English Muffin">English Muffin</option>
               <option value="Obwarzanek">Obwarzanek Krakowski</option>
               <option value="Pretzel">Pretzel</option>
-      </select>
+            </select>
 
-       <label for="quantity" class="text-white">Product Quantity :</label>
+            <label for="quantity" class="text-white">Product Quantity :</label>
             <input
               type="number"
               placeholder="Quantity"
               name="quantity"
               id="number-quantity"
-              class="p-1 ml-2 px-2 rounded-md"
+              class="p-1 w-full sm:w-fit sm:ml-2 px-2 mb-2 rounded-md"
             />
     `;
 
